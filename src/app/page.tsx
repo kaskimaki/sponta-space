@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
+
 
 export default function LandingPage() {
   return (
@@ -17,7 +18,7 @@ export default function LandingPage() {
         </p>
         <h2 className="text-3xl font-semibold text-gray-900 mb-4">What We Do</h2>
         <p className="text-lg text-gray-700 max-w-2xl mb-6">
-          Sponta personalizes venues by giving them a digital identity and tools that go beyond the traditional &quot;service promise.&quot;We empower venues to reach the right audience while providing people with a product that simplifies and enriches their free time—whether individually or as a group.
+          Sponta personalizes venues by giving them a digital identity and tools that go beyond the traditional &quot;service promise.&quot; We empower venues to reach the right audience while providing people with a product that simplifies and enriches their free time—whether individually or as a group.
         </p>
         <p className="text-lg font-bold text-gray-900 max-w-2xl mb-6">
           We come from the underground. We make sure there is always something for everyone. No one should feel forgotten.
