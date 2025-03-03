@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Leave empty if no other config options are needed
+  reactStrictMode: true,  // ✅ Enables Next.js strict mode
+  experimental: {},        // ✅ No "output: standalone"
 };
 
 export default nextConfig;

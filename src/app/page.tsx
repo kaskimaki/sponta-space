@@ -1,7 +1,8 @@
-import React from "react";
 import Image from "next/image";
-import { Button } from "../components/ui/button";
+import { Button } from "./components/ui/button";
 
+// ✅ Explicitly enable dynamic rendering
+export const dynamic = "force-dynamic";
 
 export default function LandingPage() {
   return (
@@ -23,18 +24,17 @@ export default function LandingPage() {
         <p className="text-lg font-bold text-gray-900 max-w-2xl mb-6">
           We come from the underground. We make sure there is always something for everyone. No one should feel forgotten.
         </p>
-        <Button className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 text-white rounded-xl">Join the Movement</Button>
+        <Button className="px-8 py-4 text-lg bg-blue-600 hover:bg-blue-700 text-white rounded-xl">
+          Join the Movement
+        </Button>
       </div>
 
-      {/* Why Sponta */}
+      {/* ✅ Add Dynamic Content to Force Server-Side Rendering */}
       <div className="mt-12 px-6 text-gray-900">
-        <h2 className="text-3xl font-semibold">Why Sponta?</h2>
-        <ul className="text-lg text-gray-600 mt-6 space-y-4">
-          <li>✅ AI-powered event recommendations tailored to groups</li>
-          <li>✅ Digital venue identities to amplify cultural impact</li>
-          <li>✅ Intuitive tools for ideating and managing social content</li>
-          <li>✅ Real-time insights on industry trends and event analytics</li>
-        </ul>
+        <h2 className="text-2xl font-semibold">Dynamic Content Test</h2>
+        <p className="text-lg text-blue-500 mt-2">
+          API Response: {new Date().toLocaleTimeString()}
+        </p>
       </div>
 
       {/* Footer */}
@@ -44,5 +44,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-
