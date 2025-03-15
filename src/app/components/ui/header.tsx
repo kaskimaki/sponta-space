@@ -8,14 +8,7 @@ type headerProps = {
 
 export const Header: React.FC<headerProps> = ({ children }) => {
   return (
-    <header
-      style={{
-        width: "100%",
-        backgroundColor: "black",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
+    <header className="w-full bg-black py-6 flex justify-center">
       {children}
     </header>
   );
