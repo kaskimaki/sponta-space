@@ -9,13 +9,7 @@ type footerProps = {
 
 export const Footer: React.FC<footerProps> = ({ children }) => {
   return (
-    <footer
-      style={{
-        marginTop: "2rem",
-        color: "#6b7280",
-        fontSize: "0.875rem",
-      }}
-    >
+    <footer className="mt-8 text-gray-500 text-sm pb-6">
       {children}
       <p>&copy; {new Date().getFullYear()} Sponta. All rights reserved.</p>
     </footer>
