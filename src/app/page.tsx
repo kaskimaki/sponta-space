@@ -20,7 +20,14 @@ export default function LandingPage() {
       }}
     >
       <Header>
-        <Image src="/logo.svg" alt="Sponta Logo" width={500} height={200} />
+      <Image 
+        src="/logo.svg" 
+        alt="Sponta Logo" 
+        width={500} 
+        height={200} 
+        priority
+        unoptimized
+      />
       </Header>
       <div
         style={{
