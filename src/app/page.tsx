@@ -2,7 +2,7 @@ import { Button } from "./components/ui/button";
 import { Footer } from "./components/ui/footer";
 import { Header } from "./components/ui/header";
 import Image from "next/image";
-import logo from "../public/logo.png"
+import logo from "../../public/logo.png"
 
 // ✅ Explicitly enable dynamic rendering
 export const dynamic = "force-dynamic";
