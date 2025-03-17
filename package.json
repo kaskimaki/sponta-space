@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:css": "tailwindcss -i ./src/app/globals.css -o ./src/app/globals.css",
     "dev": "next dev",
     "build": "next build",
-    "prebuild": "npx tailwindcss -i ./src/app/globals.css -o ./src/app/globals.css",
     "start": "next start",
     "lint": "next lint"
-},
-
+  },
   "dependencies": {
     "next": "^15.2.0",
     "react": "^19.0.0",
@@ -23,11 +22,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.9",
+    "tailwindcss": "^4.0.14",
     "typescript": "^5"
   }
 }
