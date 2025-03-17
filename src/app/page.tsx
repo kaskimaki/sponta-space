@@ -2,6 +2,8 @@ import { Button } from "./components/ui/button";
 import { Footer } from "./components/ui/footer";
 import { Header } from "./components/ui/header";
 import Image from "next/image";
+import logo from "../public/logo.png"
+
 // ✅ Explicitly enable dynamic rendering
 export const dynamic = "force-dynamic";
 
@@ -18,7 +20,7 @@ export default function LandingPage() {
       }}
     >
       <Header>
-        <Image src="/logo.png" alt="Sponta Logo" width={500} height={200} />
+        <Image src={logo} alt="Sponta Logo" width={500} height={200} />
       </Header>
       <div
         style={{
