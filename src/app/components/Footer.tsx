@@ -18,6 +18,9 @@ export function Footer() {
           <Link href="/privacy" className="underline-offset-2 hover:underline">
             Privacy Policy
           </Link>
+          <Link href="/child-safety" className="underline-offset-2 hover:underline">
+            Child Safety
+          </Link>
         </div>
       </div>
     </footer>
